@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"           
+    content="web untuk perbukuan">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- lootie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>BookShelf</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>BookShelf</h1>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- awal -->
+        <div class="container">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_DMgKk1.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+            <div class="info">
+                <h2>Welcome To BookShelf</h2>
+                <p>We provide a platform for your bookkeeping needs</p>
+                <a href="#myBookShelf"><button>Start</button></a>
+            </div>
+        </div>
+
+        <!-- area boookshelf -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#62D2A2" fill-opacity="1" d="M0,192L48,181.3C96,171,192,149,288,149.3C384,149,480,171,576,197.3C672,224,768,256,864,250.7C960,245,1056,203,1152,160C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        
+        <div class="content" id="myBookShelf">
+            <h2 class="jdl">My BookShelf</h2>
+
+            
+
+            
+            <div class="innerBookshelf">
+                <!-- search -->
+                <div class="searchBook">
+                    <h2>Cari Buku</h2>
+                    <form id="searchBook">
+                        <label for="searchBookTitle">Judul</label>
+                        <input id="searchBookTitle" type="text">
+                        <button id="searchSubmit" type="submit">Cari</button>
+                    </form>
+                </div>
+
+                <!-- input -->
+                <div class="inputBook">
+                    <h2>Masukkan Buku Baru</h2>
+                    <form class="form" action="#" id="form">
+                        <div class="input">
+                            <label for="inputBookTitle">Judul : </label>
+                            <input class="inputInner" id="inputBookTitle" type="text" required="">
+                        </div>
+                        <div class="input">
+                            <label for="inputBookAuthor">Penulis : </label>
+                            <input class="inputInner" id="inputBookAuthor" type="text" required="">
+                        </div>
+                        <div class="input">
+                            <label for="inputBookYear">Tahun : </label>
+                            <input class="inputInner" id="inputBookYear" type="number" required="">
+                        </div>
+                        <div class="inputInLine">
+                            <label for="inputBookIsComplete">Selesai dibaca</label>
+                            <input id="inputBookIsComplete" type="checkbox">
+                        </div>
+                        <button id="bookSubmit" type="submit" >Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+                    </form>
+                </div>
+            </div>
+            
+                <!-- output -->
+                <div class="output">
+                    <div class="alreadyRead">
+                        <h2>Sudah Dibaca</h2>
+                        <div id="complete">
+                            
+                        </div>
+
+                    </div>
+                    <div class="unread">
+                        <h2>Belum Dibaca</h2>
+                        <div id="unComplete">
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#62D2A2" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,149.3C384,149,480,139,576,128C672,117,768,107,864,106.7C960,107,1056,117,1152,133.3C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+
+        <!-- modal untuk mencari buku -->
+        <div id="modal">
+            <section class="mycontainerFind" id="mycontainerFind">
+                <h2>Your Book</h2>
+                
+                <button id="buttonFindClose">close</button>
+                
+            </section>
+        </div>
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <p class="mb-0">Copyright © <span id="footer-cr-years">2021</span> BookShelf. All Right Reserved.</p>
+    </footer>
+
+
+    <!-- js -->
+    <script src="js/data.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/findBook.js"></script>
+    
+</body>
+</html>

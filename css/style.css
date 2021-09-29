@@ -1,0 +1,237 @@
+/* font google quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* styling font */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* header */
+header h1 {
+    text-align: center;
+    background-color: #62D2A2;
+    padding: 20px;
+    color: rgb(46, 46, 46);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* main */
+main .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main .container .info {
+    color: rgb(46, 46, 46);
+}
+
+button {
+    margin-top: 10px;
+    padding: 4px 5px;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: white;
+    background-color: #1FAB89;
+    border: none;
+    border-radius: 10px;
+}
+
+main .content {
+    background-color: #62D2A2;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+main .content .jdl {
+    text-align: center;
+    background-color: #006b50;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin: 0 50px 0 50px;
+}
+
+/* content */
+.inputInner {
+    width: 90%;
+    margin: 12px 0;
+}
+
+.innerBookshelf {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+}
+
+.searchBook {
+    background-color: #006b50;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    margin-right: 10px;
+}
+
+.inputBook {
+    background-color: #006b50;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+    background-color: #006b50;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* book */
+.outerContainerBook {
+    background-color: white;
+    border-radius: 10px;
+    margin: 8px 0 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.innerContainerBook {
+    color: black;
+    padding: 10px;
+}
+
+.myImg {
+    width: 80px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/* btn */
+.move-from-complete {
+    background: url(../assets/redo.png);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #62D2A2;
+}
+
+.move-from-uncomplete {
+    background: url(../assets/check.png);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #62D2A2;
+}
+
+.remove-book {
+    background: url(../assets/trash.png);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #62D2A2;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #006b50;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+/* modal */
+.mycontainerFind {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    background-color: rgba(203, 209, 243, 0.7);
+    display: none;
+    transition: 1s all;
+    justify-content: center;
+    align-items: center;
+}
+
+.showModal {
+    display: flex !important;
+}
+
+.innerFind {
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerFind>img {
+    width: 10%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.noDataBook {
+    padding: 5px;
+}
+
+/* ============================== when minimize =========================== */
+@media screen and (max-width: 1024px) {
+
+    /* awal */
+    main .container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .searchBook {
+        margin: 0 0 10px 0;
+    }
+}
